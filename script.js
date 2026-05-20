@@ -15,6 +15,7 @@ document.addEventListener('wheel', (e) => {
 
 const cards = document.querySelectorAll('#tecs ul li');
 let text = document.querySelectorAll('#tecs .tecbox1 .tectext');
+let circle  = document.querySelectorAll('#tecs .tecbox1 #circles .circle');
 
 cards.forEach((card) => {
     card.addEventListener('pointermove', (e) => {
@@ -48,11 +49,14 @@ let Primeiro = 0
 let Ultimo = cards.length - 1
 
 
+// BOTÃO ANTERIOR
 botaoAnter.onclick = () => {
     let cardAntigo = document.querySelector('#tecs .tecbox2 ul li.ativo');
     let textAntigo = document.querySelector('#tecs .tecbox1 .tectext.textoAtivo');
+    let circleAntigo = document.querySelector('#tecs .tecbox1 #circles .circle.cirAtivo');
     cardAntigo.classList.remove('ativo');
     textAntigo.classList.remove('textoAtivo');
+    circleAntigo.classList.remove('cirAtivo');
 
 
     if (active - 1 < Primeiro) {
@@ -62,13 +66,17 @@ botaoAnter.onclick = () => {
     }
     cards[active].classList.add('ativo');
     text[active].classList.add('textoAtivo');
+    circle[active].classList.add('cirAtivo');
 }
 
+// BOTÃO PRÓXIMO
 botaoProx.onclick = () => {
     let cardAntigo = document.querySelector('#tecs .tecbox2 ul li.ativo');
     let textAntigo = document.querySelector('#tecs .tecbox1 .tectext.textoAtivo');
+    let circleAntigo = document.querySelector('#tecs .tecbox1 #circles .circle.cirAtivo');
     cardAntigo.classList.remove('ativo');
     textAntigo.classList.remove('textoAtivo');
+    circleAntigo.classList.remove('cirAtivo');
 
     if (active + 1 > Ultimo) {
         active = 0
@@ -77,4 +85,5 @@ botaoProx.onclick = () => {
     }
     cards[active].classList.add('ativo');
     text[active].classList.add('textoAtivo');
+    circle[active].classList.add('cirAtivo');
 }
