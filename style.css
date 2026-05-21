@@ -398,7 +398,7 @@ section {
         position: absolute;
         display: flex;
         gap: 30px;
-        top: 80px;
+        top: 110px;
         left: 9000px;
 
         h5 {
@@ -410,6 +410,30 @@ section {
             white-space: nowrap;
         }
 
+        .projborder {
+            position: absolute;
+            width: 1050px;
+            height: 100px;
+            top: -35px;
+            left: -75px;
+            background-color: var(--text-grey);
+            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+            z-index: -3;
+            animation: updown 5s ease-in-out infinite;
+        }
+
+        .projborder2 {
+            position: absolute;
+            width: 1050px;
+            height: 100px;
+            top: -35px;
+            left: -75px;
+            background-color: var(--lima-green);
+            clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 5% 100%);
+            z-index: -4;
+            animation: updown 3s ease-in-out infinite;
+        }
+
         .projBox {
             position: relative;
             top: 180px;
@@ -418,8 +442,17 @@ section {
             height: 400px;
             background-color: rgb(54, 54, 54);
             background: linear-gradient(to right, rgb(39, 39, 39), rgb(54, 54, 54));
-            clip-path: polygon(0% 0%, 98% 0%, 100% 100%, 2% 100%);
+            clip-path: polygon(0% 0%, 97% 0%, 100% 100%, 3% 100%);
             z-index: -2;
+
+            h6 {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 30px;
+                top: 0px;
+                left: 400px;
+            }
 
             button {
                 position: absolute;
@@ -439,6 +472,21 @@ section {
                 background-color: var(--lima-green);
                 color: var(--white);
                 transition: 0.2s;
+            }
+
+            .gitlink {
+                position: relative;
+                width: 60px;
+                top: 310px;
+                left: 400px;
+                cursor: pointer;
+            }
+
+            .projimg {
+                position: absolute;
+                width: 350px;
+                top: -40px;
+                left: 0px;
             }
         }
     }
