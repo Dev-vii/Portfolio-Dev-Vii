@@ -605,6 +605,22 @@ section {
             }
         }
     }
+
+    #contato {
+        position: absolute;
+        left: 14100px;
+        width: 100%;
+
+        h8 {
+            position: absolute;
+            font-family: font-title;
+            color: var(--lima-green);
+            font-size: 50px;
+            top: 100px;
+            left: 100px;
+            white-space: nowrap;
+        }
+    }
 }
 
 /* REMOVER ATIVO */
