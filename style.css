@@ -218,7 +218,7 @@ section {
                 color: #a7ee56;
                 font-size: 72px;
                 top: -30px;
-                left: 600px;
+                left: 580px;
                 white-space: nowrap;
             }
 
@@ -510,9 +510,9 @@ section {
         h7 {
             position: absolute;
             font-family: font-title;
-            font-size: 120px;
+            font-size: 100px;
             top: -70px;
-            left: -130px;
+            left: -70px;
             background: linear-gradient(to bottom, var(--lima-green) 50px, rgba(55, 138, 0, 0));
             background-clip: text;
             -webkit-background-clip: text;
@@ -525,9 +525,25 @@ section {
             line-height: 0.9;
         }
 
+        p {
+            position: absolute;
+            font-family: font-title;
+            text-align: right;
+            font-size: 90px;
+            background: linear-gradient(to left, var(--white) 50px, rgba(55, 138, 0, 0));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 0.5px;
+            -webkit-text-stroke-color: var(--white);
+            color: transparent;
+            top: 200px;
+            left: 870px;
+        }
+
         .servicebox {
             position: absolute;
-            width: 1550px;
+            width: 1490px;
             height: 790px;
             top: -20px;
             left: -75px;
@@ -558,6 +574,17 @@ section {
         }
 
         .servicebox2 {
+            position: absolute;
+            width: 1490px;
+            height: 770px;
+            top: 0px;
+            left: -45px;
+            background-color: var(--lima-green);
+            clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 0% 100%);
+            z-index: -5;
+        }
+
+        .servicebox3 {
             position: absolute;
             width: 800px;
             height: 450px;
