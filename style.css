@@ -608,17 +608,57 @@ section {
 
     #contato {
         position: absolute;
-        left: 14100px;
+        left: 13800px;
         width: 100%;
 
         h8 {
             position: absolute;
             font-family: font-title;
-            color: var(--lima-green);
-            font-size: 50px;
-            top: 100px;
-            left: 100px;
+            color: rgb(54, 54, 54);
+            font-size: 70px;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
             white-space: nowrap;
+        }
+
+        p {
+            position: absolute;
+            font-family: font-title;
+            color: var(--text-grey);
+            font-size: 18px;
+            top: 650px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .contacts {
+            position: absolute;
+            display: flex;
+            gap: 50px;
+            top: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            & .contactbox {
+                position: relative;
+                top: 150px;
+                width: 150px;
+                height: 150px;
+                background-color: var(--lima-green);
+                clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 20% 100%, 0% 80%);
+                animation: updown 5s ease-in-out infinite;
+                cursor: pointer;
+
+                .contactimg {
+                    position: absolute;
+                    width: 80px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
         }
     }
 }
