@@ -253,6 +253,7 @@ section {
         }
     }
 
+    /* TECNOLOGIAS */
     #tecs {
         position: absolute;
         top: 80px;
@@ -778,6 +779,7 @@ section {
 
     section {
 
+        /* INTRODUÇÃO */
         #intro {
 
             #introlink {
@@ -787,7 +789,8 @@ section {
             }
 
             h1 {
-                margin-top: 50px;
+                margin-top: 55px;
+                margin-left: auto;
                 font-size: 30px;
             }
 
@@ -836,6 +839,262 @@ section {
                 border-left: 200px solid transparent;
                 border-right: 200px solid transparent;
                 border-bottom: 350px solid var(--lima-green);
+            }
+        }
+
+        /* BIOGRAFIA */
+        #bio {
+            top: 150px;
+            left: 1600px;
+
+            #biolink {
+                position: absolute;
+                top: -950px;
+                left: 900px;
+            }
+
+            h2 {
+                font-size: 68px;
+                top: -130px;
+                left: -810px;
+                max-width: 380px;
+                word-wrap: break-word;
+                text-align: right;
+            }
+
+            .foto2 {
+                width: 230px;
+                clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+                top: 0px;
+                left: -800px;
+                z-index: 3;
+            }
+
+            .borderbox {
+                left: -780px;
+                top: 240px;
+                width: 335px;
+                height: 250px;
+                clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+                z-index: -1;
+            }
+
+            .biobox {
+                position: absolute;
+                left: -780px;
+                top: 240px;
+                width: 325px;
+                height: 250px;
+                clip-path: polygon(0% 0%, 100% 0%, 95% 100%, 0% 100%);
+                z-index: 4;
+
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 13px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+
+    /* TECNOLOGIAS */
+    #tecs {
+        position: absolute;
+        top: 80px;
+        left: 6000px;
+
+        #teclink {
+            position: absolute;
+            top: -950px;
+            left: 1850px;
+        }
+
+        .tecbox1 {
+            position: absolute;
+            width: 1800px;
+            height: 800px;
+            background-color: rgb(54, 54, 54);
+            background: linear-gradient(to right, rgb(39, 39, 39), rgb(54, 54, 54));
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -2;
+
+            h3 {
+                position: absolute;
+                font-family: font-title;
+                color: #a7ee56;
+                font-size: 72px;
+                top: -30px;
+                left: 580px;
+                white-space: nowrap;
+            }
+
+            .tectext {
+                position: absolute;
+                width: 400px;
+                height: 100px;
+                top: 300px;
+                left: 1030px;
+                opacity: 0;
+                text-align: center;
+
+                h4 {
+                    font-family: font-title;
+                    color: var(--white);
+                    font-size: 40px;
+                }
+
+                p {
+                    font-family: font-title;
+                    color: var(--white);
+                    font-size: 18px;
+                }
+            }
+        }
+
+        #buttons {
+            position: absolute;
+            display: flex;
+            top: 600px;
+            left: 1100px;
+            gap: 150px;
+
+            & button {
+                position: relative;
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            #anter {
+                left: 0;
+
+                img {
+                    transform: translate(-50%, -50%) rotate(180deg);
+                }
+            }
+
+            #prox {
+                left: 50px;
+            }
+        }
+
+        #circles {
+            position: absolute;
+            display: flex;
+            top: 607px;
+            left: 1160px;
+            gap: 20px;
+
+            & .circle {
+                position: relative;
+                width: 25px;
+            }
+        }
+
+        .tecborder {
+            position: absolute;
+            width: 1800px;
+            height: 800px;
+            top: 30px;
+            left: 10px;
+            background-color: var(--lima-green);
+            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+            z-index: -3;
+            animation: updown 5s ease-in-out infinite;
+        }
+
+        .tecbox2 {
+            position: absolute;
+            width: 700px;
+            height: 750px;
+            left: 100px;
+            top: 80px;
+            background-color: rgb(180, 255, 69);
+            clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 10% 100%);
+            z-index: -1;
+            animation: updown 5s ease-in-out infinite;
+
+            .tecborder2 {
+                position: absolute;
+                width: 570px;
+                height: 650px;
+                left: 100px;
+                top: 80px;
+                background-color: rgb(32, 32, 32);
+                clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
+                z-index: -1;
+                animation: updown 5s ease-in-out infinite;
+            }
+
+            h4 {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 30px;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            p {
+                position: absolute;
+                font-family: font-title;
+                color: var(--white);
+                font-size: 18px;
+                text-align: center;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            ul {
+                list-style: none;
+
+                .card {
+                    position: absolute;
+                    width: 400px;
+                    height: 550px;
+                    border-radius: 30px;
+                    border-top: 2px solid rgba(255, 255, 255, 0.4);
+                    border-left: 2px solid rgba(255, 255, 255, 0.4);
+                    background-color: rgba(255, 255, 255, 0.336);
+                    backdrop-filter: blur(6px);
+                    box-shadow: #00000038 10px 10px 10px 0px;
+                    top: 120px;
+                    left: 10px;
+                    z-index: 3;
+                    cursor: pointer;
+                    opacity: 0;
+                    transition: 0.3s;
+
+                    .imgtec {
+                        position: absolute;
+                        width: 400px;
+                        top: 47%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            .bgpadrao {
+                position: absolute;
+                width: 550px;
+                left: 100px;
+                top: 300px;
+                object-fit: cover;
+                z-index: 2;
             }
         }
     }
