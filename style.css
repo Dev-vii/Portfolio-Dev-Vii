@@ -273,6 +273,16 @@ section {
         top: 80px;
         left: 6000px;
 
+        h3 {
+            position: absolute;
+            font-family: font-title;
+            color: #a7ee56;
+            font-size: 72px;
+            top: -30px;
+            left: 580px;
+            white-space: nowrap;
+        }
+
         #teclink {
             position: absolute;
             top: -950px;
@@ -287,16 +297,6 @@ section {
             background: linear-gradient(to right, rgb(39, 39, 39), rgb(54, 54, 54));
             clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
             z-index: -2;
-
-            h3 {
-                position: absolute;
-                font-family: font-title;
-                color: #a7ee56;
-                font-size: 72px;
-                top: -30px;
-                left: 580px;
-                white-space: nowrap;
-            }
 
             .tectext {
                 position: absolute;
@@ -791,16 +791,14 @@ section {
 /* DISPOSITIVOS MENORES */
 @media (max-width: 767px) {
 
+    header {
+        top: -100px;
+    }
+
     section {
 
         /* INTRODUÇÃO */
         #intro {
-
-            #introlink {
-                position: absolute;
-                top: -950px;
-                left: -100px;
-            }
 
             h1 {
                 margin-top: 55px;
@@ -811,6 +809,13 @@ section {
             p {
                 margin-top: -20px;
                 font-size: 11.5px;
+            }
+
+            button {
+                top: 10px;
+                width: 150px;
+                height: 40px;
+                font-size: 11px;
             }
         }
 
@@ -861,12 +866,6 @@ section {
             top: 150px;
             left: 1600px;
 
-            #biolink {
-                position: absolute;
-                top: -950px;
-                left: 900px;
-            }
-
             h2 {
                 font-size: 68px;
                 top: -130px;
@@ -916,198 +915,100 @@ section {
             top: 80px;
             left: 1800px;
 
-            #teclink {
-                position: absolute;
-                top: -950px;
-                left: 1850px;
+            h3 {
+                font-size: 31px;
+                top: -40px;
+                left: -160px;
+                white-space: normal;
+                text-align: center;
             }
 
             .tecbox1 {
-                position: absolute;
-                width: 1800px;
-                height: 800px;
-                background-color: rgb(54, 54, 54);
-                background: linear-gradient(to right, rgb(39, 39, 39), rgb(54, 54, 54));
-                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-                z-index: -2;
-
-                h3 {
-                    position: absolute;
-                    font-family: font-title;
-                    color: #a7ee56;
-                    font-size: 72px;
-                    top: -30px;
-                    left: 580px;
-                    white-space: nowrap;
-                }
+                left: -180px;
+                width: 320px;
+                height: 300px;
 
                 .tectext {
-                    position: absolute;
-                    width: 400px;
-                    height: 100px;
-                    top: 300px;
-                    left: 1030px;
-                    opacity: 0;
-                    text-align: center;
+                    top: 120px;
+                    left: -40px;
 
                     h4 {
-                        font-family: font-title;
-                        color: var(--white);
-                        font-size: 40px;
+                        font-size: 22px;
+                        margin: 0 0 10px 0;
                     }
 
                     p {
-                        font-family: font-title;
-                        color: var(--white);
-                        font-size: 18px;
+                        font-size: 12px;
+                        margin: 0;
                     }
                 }
             }
 
             #buttons {
-                position: absolute;
-                display: flex;
-                top: 600px;
-                left: 1100px;
-                gap: 150px;
-
-                & button {
-                    position: relative;
-                    cursor: pointer;
-                    width: 40px;
-                    height: 40px;
-                    background-color: transparent;
-                    border: none;
-
-                    img {
-                        width: 20px;
-                        height: 20px;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-
-                #anter {
-                    left: 0;
-
-                    img {
-                        transform: translate(-50%, -50%) rotate(180deg);
-                    }
-                }
-
-                #prox {
-                    left: 50px;
-                }
+                top: 220px;
+                left: 45px;
+                gap: 90px;
             }
 
             #circles {
-                position: absolute;
-                display: flex;
-                top: 607px;
-                left: 1160px;
-                gap: 20px;
+                top: 232px;
+                left: 102px;
+                gap: 15px;
 
                 & .circle {
-                    position: relative;
-                    width: 25px;
+                    width: 15px;
                 }
             }
 
             .tecborder {
-                position: absolute;
-                width: 1800px;
-                height: 800px;
-                top: 30px;
-                left: 10px;
-                background-color: var(--lima-green);
-                clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-                z-index: -3;
-                animation: updown 5s ease-in-out infinite;
+                top: 20px;
+                left: -180px;
+                width: 330px;
+                height: 300px;
             }
 
             .tecbox2 {
-                position: absolute;
-                width: 700px;
-                height: 750px;
-                left: 100px;
-                top: 80px;
-                background-color: rgb(180, 255, 69);
-                clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 10% 100%);
-                z-index: -1;
-                animation: updown 5s ease-in-out infinite;
+                width: 250px;
+                height: 270px;
+                left: -160px;
+                top: 280px;
 
                 .tecborder2 {
-                    position: absolute;
-                    width: 570px;
-                    height: 650px;
-                    left: 100px;
-                    top: 80px;
-                    background-color: rgb(32, 32, 32);
-                    clip-path: polygon(0% 0%, 100% 5%, 100% 100%, 0% 100%);
-                    z-index: -1;
-                    animation: updown 5s ease-in-out infinite;
+                    width: 190px;
+                    height: 230px;
+                    left: 50px;
+                    top: 40px;
                 }
 
                 h4 {
-                    position: absolute;
-                    font-family: font-title;
-                    color: var(--white);
                     font-size: 30px;
                     top: 70%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
                 }
 
                 p {
-                    position: absolute;
-                    font-family: font-title;
-                    color: var(--white);
                     font-size: 18px;
-                    text-align: center;
                     top: 85%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
                 }
 
                 ul {
-                    list-style: none;
 
                     .card {
-                        position: absolute;
-                        width: 400px;
-                        height: 550px;
-                        border-radius: 30px;
-                        border-top: 2px solid rgba(255, 255, 255, 0.4);
-                        border-left: 2px solid rgba(255, 255, 255, 0.4);
-                        background-color: rgba(255, 255, 255, 0.336);
-                        backdrop-filter: blur(6px);
-                        box-shadow: #00000038 10px 10px 10px 0px;
-                        top: 120px;
-                        left: 10px;
-                        z-index: 3;
-                        cursor: pointer;
-                        opacity: 0;
-                        transition: 0.3s;
+                        width: 120px;
+                        height: 170px;
+                        border-radius: 15px;
+                        top: 60px;
+                        left: 80px;
 
                         .imgtec {
-                            position: absolute;
-                            width: 400px;
-                            top: 47%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
+                            width: 120px;
                         }
                     }
                 }
 
                 .bgpadrao {
-                    position: absolute;
-                    width: 550px;
-                    left: 100px;
-                    top: 300px;
-                    object-fit: cover;
-                    z-index: 2;
+                    width: 200px;
+                    left: 40px;
+                    top: 70px;
                 }
             }
         }
